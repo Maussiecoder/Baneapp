@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".addfriendsActivity">
+  <ImageView
+      android:id="@+id/backgroundUp"
+      android:layout_width="413dp"
+      android:layout_height="69dp"
+      android:layout_marginBottom="664dp"
+      android:scaleType="fitXY"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:srcCompat="@drawable/darkgraysquare" />
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Add friend"
+      android:textColor="@color/lightgray"
+      android:textSize="35sp"
+      app:layout_constraintBottom_toBottomOf="@+id/backgroundUp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/backgroundUp" />
+  <ImageView
+      android:id="@+id/baneLogoImage"
+      android:layout_width="300dp"
+      android:layout_height="300dp"
+      android:scaleType="fitXY"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:layout_marginBottom="300dp"
+      app:srcCompat="@drawable/bane_logo"
+      tools:layout_editor_absoluteX="128dp"
+      tools:layout_editor_absoluteY="133dp" />
+  <ImageButton
+      android:id="@+id/backButton"
+      android:layout_width="50dp"
+      android:layout_height="50dp"
+      android:layout_marginStart="9dp"
+
+      android:layout_marginEnd="343dp"
+
+      android:background="@color/darkgray"
+      android:contentDescription="menu"
+      android:scaleType="fitCenter"
+      android:src="@drawable/backicon"
+      app:layout_constraintBottom_toBottomOf="@+id/backgroundUp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="@+id/backgroundUp" />
+
+  <TextView
+      android:id="@+id/userID"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Your Id: Maurice#8782"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/baneLogoImage"
+      android:textColor="@color/lightgray"
+      android:textSize="30sp"
+      tools:layout_editor_absoluteX="111dp"
+      tools:layout_editor_absoluteY="46dp" />
+
+  <EditText
+      android:id="@+id/contactname"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:ems="9"
+      android:inputType="textPersonName"
+      android:textColor="@color/darkgray"
+      android:textColorHint="@color/lightgray"
+      android:hint="Friend Name#0000"
+      app:layout_constraintTop_toBottomOf="@+id/userID"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="20dp"
+      tools:layout_editor_absoluteX="112dp"
+      tools:layout_editor_absoluteY="414dp" />
+  <Button
+      android:id="@+id/addButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Add Friend"
+      android:textColor="@color/lightgray"
+      android:backgroundTint="@color/banered"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginTop="20dp"
+      app:layout_constraintLeft_toLeftOf="parent"
+      app:layout_constraintRight_toRightOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/contactname" />
+</androidx.constraintlayout.widget.ConstraintLayout>

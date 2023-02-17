@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:foregroundTint="#8E0404"
+    android:foregroundTintMode="screen"
+    android:id="@+id/main"
+    tools:context=".settingsActivity">
+
+    <ImageView
+        android:id="@+id/backgroundUp"
+        android:layout_width="413dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="664dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/darkgraysquare" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instellingen"
+        android:textColor="@color/lightgray"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundUp" />
+
+    <TextView
+        android:id="@+id/textColorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Tekstkleur"
+        android:textColor="@color/lightgray"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundUp" />
+
+    <TextView
+        android:id="@+id/backgroundColorTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Achtergrondskleur"
+        android:textColor="@color/lightgray"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textcolorRadioGroup" />
+
+    <TextView
+        android:id="@+id/foregroundTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Voorgrondskleur"
+        android:textColor="@color/lightgray"
+        android:textSize="30sp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bgcolorRadioGroup" />
+
+    <ImageButton
+        android:id="@+id/backBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="9dp"
+
+        android:layout_marginEnd="343dp"
+
+        android:background="@color/darkgray"
+        android:contentDescription="menu"
+        android:scaleType="fitCenter"
+        android:src="@drawable/backicon"
+        app:layout_constraintBottom_toBottomOf="@+id/backgroundUp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/backgroundUp" />
+
+    <RadioGroup
+        android:id="@+id/bgcolorRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/bggrijsButton"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundColorTextView">
+
+        <RadioButton
+            android:id="@+id/bglichtgrijsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:text="lichtgrijs"
+            android:textColor="@color/lightgray"
+            tools:layout_editor_absoluteX="173dp"
+            tools:layout_editor_absoluteY="83dp" />
+
+        <RadioButton
+            android:id="@+id/bggrijsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:text="grijs"
+            android:textColor="@color/lightgray"
+            tools:layout_editor_absoluteX="232dp"
+            tools:layout_editor_absoluteY="84dp" />
+
+        <RadioButton
+            android:id="@+id/bgdonkergrijsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:text="donkergrijs"
+            android:textColor="@color/lightgray"
+            tools:layout_editor_absoluteX="295dp"
+            tools:layout_editor_absoluteY="85dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/textcolorRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/textlichtgrijsButton"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textColorTextView">
+
+        <RadioButton
+            android:id="@+id/textlichtgrijsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:text="lichtgrijs"
+            android:textColor="@color/lightgray"
+            tools:layout_editor_absoluteX="173dp"
+            tools:layout_editor_absoluteY="83dp" />
+
+        <RadioButton
+            android:id="@+id/textgrijsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:text="grijs"
+            android:textColor="@color/lightgray"
+            tools:layout_editor_absoluteX="232dp"
+            tools:layout_editor_absoluteY="84dp" />
+
+        <RadioButton
+            android:id="@+id/textdonkergrijsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:text="donkergrijs"
+            android:textColor="@color/lightgray"
+            tools:layout_editor_absoluteX="295dp"
+            tools:layout_editor_absoluteY="85dp" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/fgcolorRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checkedButton="@id/fgdonkergrijsButton"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foregroundTextView">
+
+        <RadioButton
+            android:id="@+id/fglichtgrijsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:text="lichtgrijs"
+            android:textColor="@color/lightgray"
+            tools:layout_editor_absoluteX="173dp"
+            tools:layout_editor_absoluteY="83dp" />
+
+        <RadioButton
+            android:id="@+id/fggrijsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:text="grijs"
+            android:textColor="@color/lightgray"
+            tools:layout_editor_absoluteX="232dp"
+            tools:layout_editor_absoluteY="84dp" />
+
+        <RadioButton
+            android:id="@+id/fgdonkergrijsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="29dp"
+            android:text="donkergrijs"
+            android:textColor="@color/lightgray"
+            tools:layout_editor_absoluteX="295dp"
+            tools:layout_editor_absoluteY="85dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/applyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply Changes"
+        android:textColor="@color/lightgray"
+        android:backgroundTint="@color/banered"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fgcolorRadioGroup" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
