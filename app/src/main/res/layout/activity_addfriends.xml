@@ -73,7 +73,7 @@
       android:layout_height="wrap_content"
       android:ems="9"
       android:inputType="textPersonName"
-      android:textColor="@color/darkgray"
+      android:textColor="@color/lightgray"
       android:textColorHint="@color/lightgray"
       android:hint="Friend Name#0000"
       app:layout_constraintTop_toBottomOf="@+id/userID"
