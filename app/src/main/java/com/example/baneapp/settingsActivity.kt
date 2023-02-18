@@ -46,6 +46,11 @@ class settingsActivity : AppCompatActivity() {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
+        val logoutbtn = findViewById<ImageButton>(R.id.logoutButton)
+        logoutbtn.setOnClickListener{
+            val intent = Intent(this, loginActivity::class.java)
+            startActivity(intent)
+        }
 
         val applyBtn = findViewById<Button>(R.id.applyButton)
         applyBtn.setOnClickListener{
@@ -56,14 +61,18 @@ class settingsActivity : AppCompatActivity() {
             if(fgid == R.id.fglichtgrijsButton) {
                 foregroundimg.setImageResource(R.drawable.lightgraysquare)
                 backbtn.setBackgroundColor(ContextCompat.getColor(this, R.color.lightgray))
+                logoutbtn.setBackgroundColor(ContextCompat.getColor(this, R.color.lightgray))
             }
             if(fgid == R.id.fggrijsButton) {
                 foregroundimg.setImageResource(R.drawable.graysquare)
                 backbtn.setBackgroundColor(ContextCompat.getColor(this, R.color.gray))
+                logoutbtn.setBackgroundColor(ContextCompat.getColor(this, R.color.gray))
+
             }
             if(fgid == R.id.fgdonkergrijsButton) {
                 foregroundimg.setImageResource(R.drawable.darkgraysquare)
                 backbtn.setBackgroundColor(ContextCompat.getColor(this, R.color.darkgray))
+                logoutbtn.setBackgroundColor(ContextCompat.getColor(this, R.color.darkgray))
             }
 
             //background

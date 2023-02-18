@@ -16,13 +16,13 @@ class addfriendsActivity : AppCompatActivity() {
 
 
 
-        val backbtn = findViewById<ImageButton>(R.id.backButton)
+        val backbtn = findViewById<ImageButton>(R.id.backBtn)
         backbtn.setOnClickListener{
             val intent = Intent(this, MainActivity::class.java)
 
             startActivity(intent)
         }
-        val addbtn = findViewById<Button>(R.id.addButton)
+        val addbtn = findViewById<Button>(R.id.addBtn)
         val contactTextBox = findViewById<EditText>(R.id.contactname)
         addbtn.setOnClickListener{
             var contactname: String = contactTextBox.text.toString()

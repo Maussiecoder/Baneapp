@@ -24,6 +24,8 @@ class registerActivity : AppCompatActivity() {
             var emailaddress = emailaddressfield.text
             var password = passwordfield.text
             var username = usernamefield.text
+            intent = Intent(this, loginActivity::class.java)
+            startActivity(intent)
         }
     }
 }

@@ -23,6 +23,8 @@ class loginActivity : AppCompatActivity() {
             var emailaddress = emailaddressfield.text
             var password = passwordfield.text
             passwordfield.setText("")
+            intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 
