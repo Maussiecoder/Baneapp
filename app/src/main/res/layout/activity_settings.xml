@@ -73,6 +73,20 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bgcolorRadioGroup" />
+    <TextView
+        android:id="@+id/textsizeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Lettergrootte"
+        android:textColor="@color/lightgray"
+        android:textSize="30sp"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fgcolorRadioGroup" />
 
     <ImageButton
         android:id="@+id/backBtn"
@@ -205,7 +219,8 @@
             android:text="donkergrijs"
             android:textColor="@color/lightgray"
             tools:layout_editor_absoluteX="295dp"
-            tools:layout_editor_absoluteY="85dp" />
+            tools:layout_editor_absoluteY="85dp"
+            />
     </RadioGroup>
 
     <Button
@@ -218,7 +233,7 @@
 
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/fgcolorRadioGroup" />
+        app:layout_constraintTop_toBottomOf="@+id/textsizeTextView" />
 
     <ImageButton
         android:id="@+id/logoutButton"
@@ -231,6 +246,19 @@
         android:scaleType="fitXY"
         android:backgroundTint="@color/gray"
          />
+
+    <EditText
+        android:id="@+id/textsizeNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="2"
+        android:text="14"
+        android:textColor="@color/lightgray"
+        android:inputType="number"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@+id/textsizeTextView"
+        app:layout_constraintTop_toTopOf="@+id/textsizeTextView"
+        app:layout_constraintRight_toRightOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

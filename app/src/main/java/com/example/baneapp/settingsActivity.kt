@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.RadioButton
@@ -26,6 +27,8 @@ class settingsActivity : AppCompatActivity() {
         var textColorText = findViewById<TextView>(R.id.textColorTextView)
         var bgColorText = findViewById<TextView>(R.id.backgroundColorTextView)
         var fgColorText = findViewById<TextView>(R.id.foregroundTextView)
+        var textsize = findViewById<EditText>(R.id.textsizeNumber)
+        var textsizeText = findViewById<TextView>(R.id.textsizeTextView)
         //buttons
         var lgTextColorButton = findViewById<RadioButton>(R.id.textlichtgrijsButton)
         var gTextColorButton = findViewById<RadioButton>(R.id.textgrijsButton)
@@ -104,6 +107,9 @@ class settingsActivity : AppCompatActivity() {
                 bgColorText.setTextColor(ContextCompat.getColor(this, R.color.lightgray))
                 fgColorText.setTextColor(ContextCompat.getColor(this, R.color.lightgray))
                 textColorText.setTextColor(ContextCompat.getColor(this, R.color.lightgray))
+                textsize.setTextColor(ContextCompat.getColor(this, R.color.lightgray))
+                textsizeText.setTextColor(ContextCompat.getColor(this, R.color.lightgray))
+
 
 
 
@@ -125,6 +131,8 @@ class settingsActivity : AppCompatActivity() {
                 bgColorText.setTextColor(ContextCompat.getColor(this, R.color.gray))
                 fgColorText.setTextColor(ContextCompat.getColor(this, R.color.gray))
                 textColorText.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                textsize.setTextColor(ContextCompat.getColor(this, R.color.gray))
+                textsizeText.setTextColor(ContextCompat.getColor(this, R.color.gray))
             }
             if(textcolorid == R.id.textdonkergrijsButton) {
                 lgTextColorButton.setTextColor(ContextCompat.getColor(this, R.color.darkgray))
@@ -143,7 +151,31 @@ class settingsActivity : AppCompatActivity() {
                 bgColorText.setTextColor(ContextCompat.getColor(this, R.color.darkgray))
                 fgColorText.setTextColor(ContextCompat.getColor(this, R.color.darkgray))
                 textColorText.setTextColor(ContextCompat.getColor(this, R.color.darkgray))
+                textsize.setTextColor(ContextCompat.getColor(this, R.color.darkgray))
+                textsizeText.setTextColor(ContextCompat.getColor(this, R.color.darkgray))
             }
+            var newTextSizeText = textsize.text.toString()
+            var newTextSize: Float = newTextSizeText.toFloat()
+            lgTextColorButton.setTextSize(newTextSize)
+            gTextColorButton.setTextSize(newTextSize)
+            dgTextColorButton.setTextSize(newTextSize)
+
+            lgbgColorButton.setTextSize(newTextSize)
+            gbgColorButton.setTextSize(newTextSize)
+            dgbgColorButton.setTextSize(newTextSize)
+
+            lgfgColorButton.setTextSize(newTextSize)
+            gfgColorButton.setTextSize(newTextSize)
+            dgfgColorButton.setTextSize(newTextSize)
+
+            textsize.setTextSize(newTextSize)
+
+            var newBigTextSize: Float = newTextSize + 16
+            instellingenText.setTextSize(newBigTextSize)
+            bgColorText.setTextSize(newBigTextSize)
+            fgColorText.setTextSize(newBigTextSize)
+            textColorText.setTextSize(newBigTextSize)
+            textsizeText.setTextSize(newBigTextSize)
 
 
         }
