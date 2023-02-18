@@ -61,7 +61,7 @@ class chatscreen : AppCompatActivity(), android.view.GestureDetector.OnGestureLi
         return false
     }
     private fun addMessage(naam: String, bericht: String, tijd: String, profielfoto: Int) {
-        if(bericht != "") {
+        if(bericht != null) {
             gebruikersnamen.add(naam)
             berichtenlijst.add(bericht)
             tijden.add(tijd)
