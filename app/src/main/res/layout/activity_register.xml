@@ -12,12 +12,11 @@
       android:id="@+id/backgroundUp"
       android:layout_width="413dp"
       android:layout_height="69dp"
-      android:layout_marginBottom="664dp"
       android:scaleType="fitXY"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
       app:srcCompat="@drawable/darkgraysquare" />
   <TextView
       android:id="@+id/textView"
@@ -79,11 +78,9 @@
       android:id="@+id/banelogo"
       android:layout_width="300dp"
       android:layout_height="300dp"
-      android:layout_marginTop="8dp"
-      android:layout_marginBottom="300dp"
+      android:layout_marginTop="16dp"
 
       android:scaleType="fitXY"
-      app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
 
@@ -94,29 +91,25 @@
       android:id="@+id/registerButton"
       android:layout_width="200dp"
       android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:backgroundTint="@color/banered"
       android:text="Sign Up"
       android:textSize="20sp"
-      app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/password"
-      android:backgroundTint="@color/banered"
-      android:layout_marginTop="20dp"
-      tools:layout_editor_absoluteX="68dp"
-      tools:layout_editor_absoluteY="465dp" />
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/password" />
+
   <ImageButton
       android:id="@+id/backButton"
       android:layout_width="50dp"
       android:layout_height="50dp"
-      android:layout_marginStart="9dp"
-
-      android:layout_marginEnd="343dp"
+      android:layout_marginStart="8dp"
 
       android:background="@color/darkgray"
       android:contentDescription="menu"
       android:scaleType="fitCenter"
       android:src="@drawable/backicon"
       app:layout_constraintBottom_toBottomOf="@+id/backgroundUp"
-      app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toTopOf="@+id/backgroundUp" />
 
