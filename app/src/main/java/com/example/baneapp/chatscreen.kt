@@ -4,10 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.GestureDetector
 import android.view.MotionEvent
-import android.widget.ImageButton
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import java.util.*
@@ -34,6 +31,7 @@ class chatscreen : AppCompatActivity(), android.view.GestureDetector.OnGestureLi
             startActivity(intent)
         }
         val profilename = intent.getStringExtra("gebruikersnaam")
+        findViewById<ImageView>(R.id.friendAvatar).setImageResource(R.drawable.friendicon)
         val profieltextview = findViewById<TextView>(R.id.friendname)
         profieltextview.setText(profilename)
         val messageview = findViewById<RecyclerView>(R.id.messagesRecyclerview)
