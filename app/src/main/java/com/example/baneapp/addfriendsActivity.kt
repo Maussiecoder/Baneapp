@@ -25,9 +25,9 @@ class addfriendsActivity : AppCompatActivity() {
         val addbtn = findViewById<Button>(R.id.addButton)
         val contactTextBox = findViewById<EditText>(R.id.contactname)
         addbtn.setOnClickListener{
-            var contactname = contactTextBox.text
+            var contactname: String = contactTextBox.text.toString()
             val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra("gebruikersnamen", contactname)
+            intent.putExtra("gebruikersnaam", contactname)
             intent.putExtra("profielfotos", R.id.friendAvatar)
             startActivity(intent)
         }

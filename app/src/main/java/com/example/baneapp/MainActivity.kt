@@ -28,8 +28,9 @@ class MainActivity : AppCompatActivity(), GestureDetector.OnGestureListener, con
 
         gebruikersnamen.add("Esra")
         profielfotos.add(R.drawable.friendicon)
-        val extracontact = intent.getStringExtra("gebruikersnaam")
-        if (extracontact != null) {
+        val extracontact: String = intent.getStringExtra("gebruikersnaam").toString()
+
+        if (extracontact != "null") {
             gebruikersnamen.add(extracontact)
             profielfotos.add(R.drawable.friendicon)
         }

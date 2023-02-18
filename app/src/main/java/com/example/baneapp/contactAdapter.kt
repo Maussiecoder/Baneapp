@@ -23,7 +23,6 @@ class contactAdapter(private val listener: OnItemClickListener, private var gebr
             profilePicture = itemView.findViewById(R.id.profile_picture)
             itemView.setOnClickListener{
                 val position = adapterPosition
-                Toast.makeText(itemView.context, "hallo", Toast.LENGTH_SHORT).show()
                 listener.onItemClick(position)
 
             }

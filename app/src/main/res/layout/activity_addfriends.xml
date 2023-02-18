@@ -48,7 +48,6 @@
       android:layout_width="50dp"
       android:layout_height="50dp"
       android:layout_marginStart="9dp"
-
       android:layout_marginEnd="343dp"
 
       android:background="@color/darkgray"
